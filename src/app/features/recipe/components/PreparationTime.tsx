@@ -11,8 +11,7 @@ export const PreparationTime = ({
       <ul className="typo-4 list-outside list-disc space-y-100 pl-300 marker:text-xs marker:text-rose-800">
         {preparations.map((item, index) => (
           <li key={index} className="pl-200">
-            <span className="typo-5">{item.timeLabel}</span>
-            {item.timeValue}
+            <span className="typo-5">{item.timeLabel}</span>: {item.timeValue}
           </li>
         ))}
       </ul>

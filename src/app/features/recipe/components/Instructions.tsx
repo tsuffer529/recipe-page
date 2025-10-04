@@ -12,7 +12,7 @@ export const Instructions = ({
         {instructions.map((item, index) => (
           <li key={index} className="pl-200">
             <span className="typo-5">{item.stepTitle}</span>
-            {item.description}
+            : {item.description}
           </li>
         ))}
       </ol>
