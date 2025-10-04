@@ -10,13 +10,13 @@ export const Instructions = ({
       <h2 className="text-brown-800 typo-2">Instructions</h2>
       <ol className="typo-4 space-y-100">
         {instructions.map((item, index) => (
-          <div key={index} className="flex space-x-200 pl-100">
+          <li key={index} className="flex space-x-200 pl-100">
             <p className="text-brown-800 typo-5">{index + 1}.</p>
-            <li>
+            <p>
               <span className="typo-5">{item.stepTitle}</span>
               {item.description}
-            </li>
-          </div>
+            </p>
+          </li>
         ))}
       </ol>
     </section>

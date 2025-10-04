@@ -13,6 +13,7 @@ export const Nutrition = ({ nutrition }: { nutrition: NutritionType }) => {
           {nutrition.map((item, index) => (
             <tr key={index}>
               <th
+                scope="row"
                 className={`typo-4 pr-200 pl-400 text-left ${index === 0 ? "pb-150" : "py-150"} ${index < nutrition.length - 1 ? "border-stone-150 border-b" : ""}`}
               >
                 {item.nutrient}

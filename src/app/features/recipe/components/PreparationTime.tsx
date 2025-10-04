@@ -10,13 +10,13 @@ export const PreparationTime = ({
       <h2 className="typo-3 text-rose-800">Preparation time</h2>
       <ul className="typo-4 space-y-100">
         {preparations.map((item, index) => (
-          <div key={index} className="flex items-center space-x-200 pl-100">
+          <li key={index} className="flex items-center space-x-200 pl-100">
             <p className="text-rose-800">・</p>
-            <li>
+            <p>
               <span className="typo-5">{item.timeLabel}</span>
               {item.timeValue}
-            </li>
-          </div>
+            </p>
+          </li>
         ))}
       </ul>
     </section>
