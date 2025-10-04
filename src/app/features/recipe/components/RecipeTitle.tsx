@@ -6,9 +6,9 @@ export const RecipeTitle = ({
   title: RecipeTitleType;
 }) => {
   return (
-    <div className="space-y-300">
+    <header className="space-y-300">
       <h1 className="typo-1 text-stone-900">{recipeTitle.title}</h1>
       <p className="typo-4">{recipeTitle.description}</p>
-    </div>
+    </header>
   );
 };

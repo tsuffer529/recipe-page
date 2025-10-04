@@ -9,6 +9,9 @@ export const Nutrition = ({ nutrition }: { nutrition: NutritionType }) => {
         additional fillings.
       </p>
       <table className="w-full table-auto">
+        <caption className="sr-only">
+          Nutritional information per serving
+        </caption>
         <tbody>
           {nutrition.map((item, index) => (
             <tr key={index}>
